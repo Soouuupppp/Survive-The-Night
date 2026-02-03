@@ -1,0 +1,25 @@
+{
+  "Group": "dev.cattails",
+  "Name": "SurviveTheNight",
+  "Version": "1.0.0",
+  "Description": "Description of your plugin",
+  "Authors": [
+    {
+      "Name": "Soouuupppp",
+      "Email": "soouuuppppgames@gmail.com",
+      "Url": "https://soup.com"
+    },
+    {
+      "Name": "Maomao",
+      "Email": "maomao.fbx@gmail.com",
+      "Url": "maomaofbx.com"
+    }
+  ],
+  "Website": "",
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": true,
+  "Main": "dev.cattails.SurviveTheNight"
+}

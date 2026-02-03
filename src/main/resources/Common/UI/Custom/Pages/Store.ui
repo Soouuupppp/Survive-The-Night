@@ -1,0 +1,467 @@
+@HealthButton = TextButtonStyle(
+  Default: (Background: #CA363D, LabelStyle: (FontSize: 16, TextColor: #FFFFFF, RenderBold: true, RenderUppercase: false, HorizontalAlignment: Center, VerticalAlignment: Center)),
+  Hovered: (Background: #CC0811, LabelStyle: (FontSize: 16, TextColor: #FFFFFF, RenderBold: true, RenderUppercase: false, HorizontalAlignment: Center, VerticalAlignment: Center)),
+  Pressed: (Background: #88080E, LabelStyle: (FontSize: 16, TextColor: #FFFFFF, RenderBold: true, RenderUppercase: false, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+@StaminaButton = TextButtonStyle(
+  Default: (Background: #65BA2C, LabelStyle: (FontSize: 16, TextColor: #FFFFFF, RenderBold: true, RenderUppercase: false, HorizontalAlignment: Center, VerticalAlignment: Center)),
+  Hovered: (Background: #50B90A, LabelStyle: (FontSize: 16, TextColor: #FFFFFF, RenderBold: true, RenderUppercase: false, HorizontalAlignment: Center, VerticalAlignment: Center)),
+  Pressed: (Background: #367909, LabelStyle: (FontSize: 16, TextColor: #FFFFFF, RenderBold: true, RenderUppercase: false, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+@UltimateButton = TextButtonStyle(
+  Default: (Background: #7DB8DD, LabelStyle: (FontSize: 16, TextColor: #FFFFFF, RenderBold: true, RenderUppercase: false, HorizontalAlignment: Center, VerticalAlignment: Center)),
+  Hovered: (Background: #3B9DDB, LabelStyle: (FontSize: 16, TextColor: #FFFFFF, RenderBold: true, RenderUppercase: false, HorizontalAlignment: Center, VerticalAlignment: Center)),
+  Pressed: (Background: #2F739E, LabelStyle: (FontSize: 16, TextColor: #FFFFFF, RenderBold: true, RenderUppercase: false, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+@ReviveButton = TextButtonStyle(
+  Default: (Background: #CA363D, LabelStyle: (FontSize: 12, TextColor: #FFFFFF, RenderBold: true, RenderUppercase: false, HorizontalAlignment: Center, VerticalAlignment: Center)),
+  Hovered: (Background: #CC0811, LabelStyle: (FontSize: 12, TextColor: #FFFFFF, RenderBold: true, RenderUppercase: false, HorizontalAlignment: Center, VerticalAlignment: Center)),
+  Pressed: (Background: #88080E, LabelStyle: (FontSize: 12, TextColor: #FFFFFF, RenderBold: true, RenderUppercase: false, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+
+Group #Main {
+  LayoutMode: Top;
+  Background: "StoreBG.png";
+  Anchor: (Width: 800, Height: 600);
+  Padding: (Vertical: 12);
+
+  Group {
+    LayoutMode: Center;
+    Anchor: (Height: 48);
+  }
+
+  Group {
+    Anchor: (Width: 700, Height: 12);
+  }
+
+  Group #HealingRow {
+    LayoutMode: Left;
+    Anchor: (Width: 500, Height: 96, Left: 150);
+    Padding: (Horizontal: 6);
+
+    AssetImage #HealthIcon {
+      Anchor: (Width: 64, Height: 64);
+      AssetPath: "HealthIcon.png";
+    }
+
+    Group {
+      Anchor: (Width: 32, Height: 0);
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Width: 300, Height: 64);
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Health1 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @HealthButton;
+        }
+
+        Label #Health1Price {
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Health2 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @HealthButton;
+        }
+
+        Label #Health2Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Health3 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @HealthButton;
+        }
+
+        Label #Health3Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Health4 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @HealthButton;
+        }
+
+        Label #Health4Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Health5 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @HealthButton;
+        }
+
+        Label #Health5Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+
+    }
+
+  }
+
+  Group {
+    Anchor: (Width: 700, Height: 24);
+  }
+
+  Group #StaminaRow {
+    LayoutMode: Left;
+    Anchor: (Width: 500, Height: 96, Left: 150);
+    Padding: (Horizontal: 6);
+
+    AssetImage #StaminaIcon {
+      Anchor: (Width: 64, Height: 64);
+      AssetPath: "StaminaIcon.png";
+    }
+
+    Group {
+      Anchor: (Width: 32, Height: 0);
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Width: 300, Height: 64);
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Stamina1 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @StaminaButton;
+        }
+
+        Label #Stamina1Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Stamina2 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @StaminaButton;
+        }
+
+        Label #Stamina2Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Stamina3 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @StaminaButton;
+        }
+
+        Label #Stamina3Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Stamina4 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @StaminaButton;
+        }
+
+        Label #Stamina4Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Stamina5 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @StaminaButton;
+        }
+
+        Label #Stamina5Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+
+    }
+
+  }
+
+  Group {
+    Anchor: (Width: 700, Height: 24);
+  }
+
+  Group #UltRow {
+    LayoutMode: Left;
+    Anchor: (Width: 500, Height: 96, Left: 150);
+    Padding: (Horizontal: 6);
+
+    AssetImage #UltimateIcon {
+      Anchor: (Width: 64, Height: 64);
+      AssetPath: "UltIcon.png";
+    }
+
+    Group {
+      Anchor: (Width: 32, Height: 0);
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Width: 300, Height: 64);
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Ultimate1 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @UltimateButton;
+        }
+
+        Label #Ultimate1Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Ultimate2 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @UltimateButton;
+        }
+
+        Label #Ultimate2Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Ultimate3 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @UltimateButton;
+        }
+
+        Label #Ultimate3Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Ultimate4 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @UltimateButton;
+        }
+
+        Label #Ultimate4Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 60, Height: 64);
+
+        TextButton #Ultimate5 {
+          Anchor: (Width: 60, Height: 38);
+          Text: "ult1";
+          Style: @UltimateButton;
+        }
+
+        Label #Ultimate5Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+
+    }
+
+  }
+
+  Group {
+    Anchor: (Width: 700, Height: 24);
+  }
+
+  Group #RevivesRow {
+    LayoutMode: Left;
+    Anchor: (Width: 500, Height: 96, Left: 150);
+    Padding: (Horizontal: 6);
+
+    AssetImage #RevivesIcon {
+      Anchor: (Width: 64, Height: 64);
+      AssetPath: "RevivesIcon.png";
+    }
+
+    Group {
+      Anchor: (Width: 32, Height: 0);
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Width: 300, Height: 64);
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 100, Height: 64);
+
+        TextButton #Revives1 {
+          Anchor: (Width: 100, Height: 38);
+          Text: "ult1";
+          Style: @ReviveButton;
+        }
+
+        Label #Revives1Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 100, Height: 64);
+
+        TextButton #Revives2 {
+          Anchor: (Width: 100, Height: 38);
+          Text: "ult1";
+          Style: @ReviveButton;
+        }
+
+        Label #Revives2Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+      Group {
+        LayoutMode: Top;
+        Anchor: (Width: 100, Height: 64);
+
+        TextButton #Revives3 {
+          Anchor: (Width: 100, Height: 38);
+          Text: "ult1";
+          Style: @ReviveButton;
+        }
+
+        Label #Revives3Price {
+          FlexWeight: 1;
+          Text: "$1";
+          Style: (FontSize: 14, Alignment: Center);
+        }
+
+      }
+
+    }
+
+  }
+
+}

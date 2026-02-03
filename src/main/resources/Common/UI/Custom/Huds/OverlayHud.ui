@@ -1,0 +1,150 @@
+Group {
+  LayoutMode: Top;
+  Background: "HudBG.png";
+  Anchor: (Width: 180, Height: 320, Right: 0, Top: 300);
+
+  Group {
+    Anchor: (Width: 152, Height: 48);
+  }
+
+  Group {
+    LayoutMode: Left;
+    Anchor: (Height: 18);
+
+    Group {
+      Anchor: (Width: 30);
+    }
+
+    Label #DayHeader {
+      Text: "Day";
+      Style: (FontSize: 18);
+    }
+
+    Group {
+      Anchor: (Width: 10);
+    }
+
+    Label #DayValue {
+      Text: "420";
+      Style: (FontSize: 18);
+    }
+
+    Group {
+      Anchor: (Width: 15);
+    }
+
+    Label #TimeValue {
+      Text: "04:20";
+      Style: (FontSize: 18);
+    }
+  }
+
+  Group {
+    Anchor: (Height: 32, Width: 152);
+  }
+
+  Group {
+    LayoutMode: Top;
+    Anchor: (Height: 156);
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Width: 152, Height: 52);
+
+      Group {
+        Anchor: (Width: 4, Height: 0);
+      }
+
+      AssetImage #HealthIcon {
+        Anchor: (Width: 32, Height: 32);
+        AssetPath: "HealthIcon.png";
+      }
+
+      Group {
+        Anchor: (Width: 18, Height: 0);
+      }
+
+      Label #HealthStat {
+        Text: "+N HP / 5s";
+        Style: (FontSize: 12, Alignment: Center);
+      }
+
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Width: 152, Height: 52);
+
+      Group {
+        Anchor: (Width: 4, Height: 0);
+      }
+
+      AssetImage #StaminaIcon {
+        Anchor: (Width: 32, Height: 32);
+        AssetPath: "StaminaIcon.png";
+      }
+
+      Group {
+        Anchor: (Width: 18, Height: 0);
+      }
+
+      Label #StaminaStat {
+        Text: "+N STAMINA / 5s";
+        Style: (FontSize: 12, Alignment: Center);
+      }
+
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Width: 152, Height: 52);
+
+      Group {
+        Anchor: (Width: 4, Height: 0);
+      }
+
+      AssetImage #UltIcon {
+        Anchor: (Width: 32, Height: 32);
+        AssetPath: "UltIcon.png";
+      }
+
+      Group {
+        Anchor: (Width: 18, Height: 0);
+      }
+
+      Label #UltStat {
+        Text: "+N ULT / 5s";
+        Style: (FontSize: 12, Alignment: Center);
+      }
+
+    }
+
+
+  }
+
+  Group {
+    Anchor: (Height: 12, Width: 152);
+  }
+
+  Group {
+    LayoutMode: Left;
+    Anchor: (Width: 152, Height: 38);
+
+    Group {
+      Anchor: (Width: 16, Height: 0);
+    }
+
+    AssetImage #CurrencyIcon {
+      Anchor: (Width: 42, Height: 42);
+      AssetPath: "CurrencyIcon.png";
+    }
+
+    Label #Currency {
+      FlexWeight: 1;
+      Text: "420";
+      Style: (FontSize: 20, RenderBold: true, Alignment: Center);
+    }
+
+  }
+
+}
