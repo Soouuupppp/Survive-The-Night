@@ -1,0 +1,23 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Spirit",
+  "Modify": {
+    "Appearance": "Root_Spirit_Mech",
+    "DropList": "Drop_Root_Spirit_Mech",
+    "MaxHealth": 49,
+    "IsMemory": true,
+    "MemoriesCategory": "Elemental",
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    },
+    "MaxSpeed": 8,
+    "ViewRange": 1000,
+    "AlertedRange": 1000
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "server.npcRoles.Spirit_Root.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}

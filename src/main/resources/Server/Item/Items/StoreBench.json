@@ -1,0 +1,58 @@
+{
+  "TranslationProperties": {
+    "Name": "Store Bench",
+    "Description": "Open the Store!"
+  },
+  "Icon": "Icons/ItemsGenerated/StoreBench.png",
+  "Categories": [
+    "Furniture.Benches"
+  ],
+  "Recipe": {
+    "Input": [
+      { "ResourceTypeId": "Wood_Trunk", "Quantity": 1 }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [ "Workbench_Crafting" ],
+        "Id": "Workbench",
+        "RequiredTierLevel": 1
+      }
+    ],
+    "TimeSeconds": 1
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModel": "Blocks/StoreBench/StoreBench.blockymodel",
+    "CustomModelTexture": [
+      { "Texture": "Blocks/BlockTextures/StoreBench.png", "Weight": 1 }
+    ],
+    "VariantRotation": "NESW",
+    "Support": {
+      "Down": [
+        { "FaceType": "Full" }
+      ]
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "BlockSoundSetId": "Stone",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "open_storebench_ui"
+          }
+        ]
+      }
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "MaxStack": 1,
+  "ItemLevel": 8,
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}
